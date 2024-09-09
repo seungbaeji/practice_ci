@@ -96,7 +96,7 @@ jobs:
         working-directory: ./${{ env.PROJECT_DIR }}
         run: |
           docker buildx build . \
-            --platform linux/amd64 linux/arm64 \
+            --platform linux/amd64 \
             --push \
             -t ${{ env.REGISTRY }}/${{ github.actor }}/practice/${{ env.PROJECT_DIR }}:latest
 
