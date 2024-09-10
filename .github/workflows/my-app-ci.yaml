@@ -38,8 +38,8 @@ jobs:
       - name: Install dependencies (dev)
         run: |
           cd ${{ env.PROJECT_DIR }}
-          poetry install --dev
-
+          poetry install
+        
       - name: Run tests and collect coverage
         run: |
           cd ${{ env.PROJECT_DIR }}
